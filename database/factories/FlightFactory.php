@@ -41,13 +41,12 @@ class FlightFactory extends Factory
                 'price' => $this->faker->randomFloat(2, 90, 500),
                 'arrival_time' => $arrival,
                 'boarding_time' => clone $arrival,
-
                 'boarding_hour' => $this->faker->dateTimeBetween('9:00:00', '21:00:00')->format('H:i'),
                 'arrival_hour' =>  $this->faker->dateTimeBetween( 'boarding_hour' , '23:00:00')->format('H:i'),
-                'reservation_code' => Str::random(10), 
             ];
         
     }
 
 }
+
 
