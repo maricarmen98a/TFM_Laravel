@@ -12,7 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /* $this->call([FlightSeeder::class, CitySeeder::class, CountrySeeder::class, UserSeed::class]); */
         $this->call([FlightSeeder::class, CitySeeder::class, CountrySeeder::class, UserSeed::class]);
     }
 }
